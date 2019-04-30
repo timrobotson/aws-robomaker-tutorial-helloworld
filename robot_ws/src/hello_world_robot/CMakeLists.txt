@@ -10,6 +10,7 @@ project(hello_world_robot)
 find_package(catkin REQUIRED COMPONENTS
   rospy
   std_msgs
+  geometry_msgs
 )
 
 ################################################################################
@@ -32,6 +33,7 @@ catkin_package(
   CATKIN_DEPENDS
     rospy
     std_msgs
+    geometry_msgs
     message_runtime
 )
 
@@ -47,6 +49,7 @@ include_directories(
 # Install
 ################################################################################
 catkin_install_python(PROGRAMS 
+  nodes/rotate.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 

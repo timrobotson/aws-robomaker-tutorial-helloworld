@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="hello_world_robot" type="rotate.py" name="rotate" output="screen" />
+</launch>
